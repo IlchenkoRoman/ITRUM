@@ -1,0 +1,506 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.black-desktop {
+    position: absolute;
+    top: 0;
+    z-index: -2;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+}
+
+header {
+    margin: 46px auto 0 auto;
+    width: 1320px;
+    height: 53px;
+}
+
+header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.autorithation {
+    background-color: #FFD74B;
+    width: 188px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    font-family: Blogger Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #161C35;
+}
+.contact-buttons{
+    float: right;
+}
+
+.contact {
+    vertical-align: middle;
+}
+
+nav {
+    list-style-type:  none;
+    margin-left: 40px;
+}
+
+nav>li {
+    display: inline-block;
+    font-family: Blogger Sans, sans-serif ;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-right: 20px;
+
+
+}
+
+.line {
+    width: 60px;
+    height: 2px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    margin-left: 40px;
+}
+
+.block-promo {
+    position: relative;
+    margin: 11px auto 0 auto;
+    width: 1320px;
+    height: 640px;
+}
+
+.traveller {
+    position: absolute;
+    z-index: -1;
+    margin: auto;
+    left: 550px;
+    top: 0;
+}
+
+.main-text {
+    margin-left:60px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    width: 1230px;
+}
+
+
+
+.main-text>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-text-h1{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.main-text-h2 {
+    font-family: Blogger Sans, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.main-text-h3{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 2em
+}
+
+.flex-table {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.flex-table>div {
+    position: relative;
+    display: flex;
+    height: 107px;
+    border-radius: 20px;
+    align-items: center;
+    box-sizing:border-box;
+
+}
+
+.flexbox-1 {
+    background: #FF8D30;
+    width: 120%;
+}
+
+.flexbox-2 {
+    background: #FFA530;
+    width: 120%;
+    left: -3%;
+}
+
+.flexbox-3 {
+    background: #FFBD30;
+    width: 120%;
+    left: -6%;
+}
+
+.flexbox-4 {
+    background: #FFD74B;
+    width: 120%;
+    left: -9%;
+}
+
+.flexbox-text {
+    font-family: Blogger Sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #161C35;
+    margin-left: 1.5em;
+}
+
+.white-line {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.second-header {
+    display: flex;
+    margin: 0 auto 0 auto;
+    width: 1320px;
+    height: 90px;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.second-header>.line {
+    background-color: #161C35;
+    height: 4px;
+}
+
+.second-header>div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.second-nav>li {
+    color: #161C35;
+}
+
+.second-header>.contact-buttons {
+    margin-left: auto;
+}
+
+.second-background {
+    position: absolute;
+    top: 692px;
+    z-index: -3;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+}
+
+.block-about{
+    position: relative;
+    margin: 0 auto 0 auto;
+    width: 1320px;
+    height: 660px;
+}
+
+.black-cube {
+    position: absolute;
+    top: -20px;
+    z-index: -2;
+    left: 0; 
+}
+
+.img-back {
+    position: absolute;
+    z-index: -2;
+    right: 0; 
+    bottom: 0;
+}
+
+.text-about{
+    padding-top: 40px;
+    margin-left: 70px;
+}
+
+.text-about-h1{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF8D30;
+}
+
+.text-about-p1 {
+    font-family: Blogger Sans, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FFFFFF;
+    margin-top: 2.1em;
+}
+
+.text-about-p2 {
+    font-family: Blogger Sans, sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 2.1em;
+}
+
+.button-about {
+    width: 274px;
+    height: 80px;
+    background: #FFD74B;
+    border-radius: 20px;
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 4.5em;
+}
+
+.button-about-text{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1D2E5B;
+
+}
+
+.background-coutry {
+    position: absolute;
+    top: 1412px;
+    z-index: -4;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+}
+
+.block-country{
+    position: relative;
+    width: 1320px;
+    height: 575px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    display: flex;
+    align-items: center;
+}
+
+.white-cube{
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+.flags {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+}
+
+.country-card {
+    margin-left: 70px;
+    display: flex;
+    width:559px;
+    height:140px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+
+.country-card-info{
+    margin-left: 30px;
+    align-self: center;
+}
+
+.country-card-h2{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.country-card-p{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #444444;
+    opacity: 0.3;
+    
+
+}
+
+.country-card-user-info{
+    display: flex;
+    margin-top: 1.5em;
+}
+
+.country-card-users{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    opacity: 0.3;
+    color: #444444;
+
+}
+
+.country-card-img{
+    position: absolute;
+    z-index: 1;
+}
+
+.flag {
+    margin-left: auto;
+    margin-right: 150px;
+    z-index: 2;
+    margin-top: 25px;
+}
+
+.country-description{
+    margin-left: 10.5em;    
+}
+
+.country-description-h1{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF8D30;
+    margin-bottom: 1em;
+}
+
+.country-description-p{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #444444;
+    margin-bottom: 4em;
+}
+
+.country-description-buttons{
+    width: 275px;
+    height: 80px;
+    border-radius: 20px;
+    background: #FFD74B;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.button-country-text{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1D2E5B;
+}
+
+.background-people{
+    position: absolute;
+    top: 2149px;
+    z-index: -5;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+}
+
+.block-people {
+    position: relative;
+    width: 1320px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.people-black-cube{
+    position: absolute;
+    left: 0; 
+    top: 0;
+    z-index: -1;
+}
+
+.people-boy {
+    position: absolute;
+    left: 487px; 
+    top: 64px;
+    z-index: -1;
+}
+
+.people-black-cube{
+    position: absolute;
+    left: 0; 
+    top: 0;
+    z-index: -1;
+}
+
+
+
+
+
