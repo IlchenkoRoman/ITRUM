@@ -3,6 +3,15 @@
     padding: 0px;
 }
 
+body {
+    height: 100%;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+
 
 .black-desktop {
     position: absolute;
@@ -11,17 +20,19 @@
     left: 0; 
     right: 0; 
     margin: auto;
+    object-fit: cover;
 }
 
 header {
     margin: 46px auto 0 auto;
-    width: 1320px;
+    max-width: 1320px;
+    width: 100%;
     height: 53px;
 }
 
 header>div {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle; 
 }
 
 .autorithation {
@@ -60,7 +71,7 @@ nav>li {
     letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
-    margin-right: 20px;
+    margin-right: 1em;
 
 
 }
@@ -138,7 +149,6 @@ nav>li {
     margin-top: 100px;
     width: 100%;
     display: flex;
-    border: 1px solid red;
     overflow: hidden;
 }
 
@@ -154,25 +164,25 @@ nav>li {
 
 .flexbox-1 {
     background: #FF8D30;
-    width: 120%;
+    width: 345px;
 }
 
 .flexbox-2 {
     background: #FFA530;
-    width: 120%;
-    left: -3%;
+    width: 375px;
+    margin-left: -30px;
 }
 
 .flexbox-3 {
     background: #FFBD30;
-    width: 120%;
-    left: -6%;
+    width: 375px;
+    margin-left: -30px;
 }
 
 .flexbox-4 {
     background: #FFD74B;
-    width: 120%;
-    left: -9%;
+    width: 315px;
+    margin-left: -30px;
 }
 
 .flexbox-text {
@@ -186,45 +196,16 @@ nav>li {
     margin-left: 1.5em;
 }
 
-.white-line {
-    width: 100%;
-    background-color: #FFFFFF;
-}
-
-.second-header {
-    display: flex;
-    margin: 0 auto 0 auto;
-    width: 1320px;
-    height: 90px;
-    align-items: center;
-    background-color: #FFFFFF;
-}
-
-.second-header>.line {
-    background-color: #161C35;
-    height: 4px;
-}
-
-.second-header>div {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.second-nav>li {
-    color: #161C35;
-}
-
-.second-header>.contact-buttons {
-    margin-left: auto;
-}
 
 .second-background {
     position: absolute;
-    top: 692px;
-    z-index: -3;
+    top: 602px;
+    z-index: -4;
     left: 0; 
     right: 0; 
     margin: auto;
+    object-fit: cover;
+    border-radius: 50px;
 }
 
 .block-about{
@@ -237,7 +218,7 @@ nav>li {
 .black-cube {
     position: absolute;
     top: -20px;
-    z-index: -2;
+    z-index: -3;
     left: 0; 
 }
 
@@ -253,7 +234,7 @@ nav>li {
     margin-left: 70px;
 }
 
-.text-about-h1{
+.text-h2{
     font-family: Blogger Sans, sans-serif;
     font-size: 45px;
     font-weight: 700;
@@ -261,9 +242,10 @@ nav>li {
     letter-spacing: 0em;
     text-align: left;
     color: #FF8D30;
+    margin-bottom: 1em;
 }
 
-.text-about-p1 {
+.text-p1 {
     font-family: Blogger Sans, sans-serif;
     font-size: 28px;
     font-weight: 300;
@@ -271,10 +253,9 @@ nav>li {
     letter-spacing: 0em;
     text-align: left;
     color:#FFFFFF;
-    margin-top: 2.1em;
 }
 
-.text-about-p2 {
+.text-p2 {
     font-family: Blogger Sans, sans-serif;
     font-size: 21px;
     font-weight: 700;
@@ -285,21 +266,26 @@ nav>li {
     margin-top: 2.1em;
 }
 
-.button-about {
+.yellow-button {
     width: 274px;
     height: 80px;
     background: #FFD74B;
     border-radius: 20px;
-    margin-left: 70px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 30px;
     padding-right: 30px;
     margin-top: 4.5em;
+    border: none;
 }
 
-.button-about-text{
+.button-about{
+    margin-left: 70px;
+}
+
+.button-text{
     font-family: Blogger Sans, sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -312,11 +298,13 @@ nav>li {
 
 .background-coutry {
     position: absolute;
-    top: 1412px;
-    z-index: -4;
+    top: 1322px;
+    z-index: -5;
     left: 0; 
     right: 0; 
     margin: auto;
+    object-fit: cover;
+    border-radius: 50px;
 }
 
 .block-country{
@@ -415,68 +403,32 @@ nav>li {
     margin-left: 10.5em;    
 }
 
-.country-description-h1{
-    font-family: Blogger Sans, sans-serif;
-    font-size: 45px;
-    font-weight: 700;
-    line-height: 45px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FF8D30;
-    margin-bottom: 1em;
-}
 
-.country-description-p{
-    font-family: Blogger Sans, sans-serif;
-    font-size: 28px;
-    font-weight: 300;
-    line-height: 33px;
-    letter-spacing: 0em;
-    text-align: left;
+.grey-text {
     color: #444444;
-    margin-bottom: 4em;
 }
 
-.country-description-buttons{
-    width: 275px;
-    height: 80px;
-    border-radius: 20px;
-    background: #FFD74B;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-
-}
-
-.button-country-text{
-    font-family: Blogger Sans, sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #1D2E5B;
-}
 
 .background-people{
     position: absolute;
-    top: 2149px;
-    z-index: -5;
+    top: 2080px;
+    z-index: -6;
     left: 0; 
     right: 0; 
     margin: auto;
+    object-fit: cover;
+    border-radius: 50px;
 }
 
 .block-people {
+    display: flex;
     position: relative;
     width: 1320px;
-    height: 600px;
+    height: 550px;
     margin-left: auto;
     margin-right: auto;
-
+    margin-top: 141px;
+    padding-top: 60px;
 }
 
 .people-black-cube{
@@ -493,14 +445,266 @@ nav>li {
     z-index: -1;
 }
 
-.people-black-cube{
+.people-woman{
     position: absolute;
-    left: 0; 
-    top: 0;
+    left: 190px;
+    bottom: 0;
     z-index: -1;
 }
 
+.people-description {
+    margin-left: 70px;
+    width: 50%;
+}
 
+.people-description-text-p1{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 1em;
+}
 
+.people-card{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.people-card-img {
+    width: 286px;
+    height: 283px;
+    border-top: 1px solid #161c3500;
+    background-image: url("../img/Layer 13 1.png");
+    background-size: no-repeat;
+    background-position: center;
+}
+
+.level-circle {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/Circle Progress Bar.svg");
+    background-size: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    margin-left: 22px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.level-num{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 3px;
+}
+
+.level-text {
+    font-family: Blogger Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.people-card-description {
+    width: 286px;
+    height: 170px;
+    background-color: #FFFFFF;
+    display: flex;
+    position: relative;
+    border-radius: 0 0 20px 20px;
+    padding-top: 31px;
+    flex-direction: column;
+}
+
+.people-flags-block{
+    display: flex;
+    justify-content: space-around;
+    width: 144px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: -12px;
+}
+
+.people-flags {
+    width: 35px;
+    height: 24px;
+}
+
+.people-data {
+    display: flex;
+    height: 22px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+
+.people-name{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1D2E5B;
+    margin-left: 14px;
+}
+
+.tags {
+    max-width: 240px;
+    font-family: Blogger Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #444444;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+.icons{
+    display: flex;
+    width: 125px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second-people-card>.people-card-img {
+    background-image: url("../img/demin-desktop\ 1.png");
+}
+
+.second-people-card>.people-card-img>.level-circle {
+    background-image: url("../img/Circle Progress Bar2.svg");
+}
+
+.background-profile {
+    position: absolute;
+    top: 2843px;
+    z-index: -9;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.profile-block{
+    position: relative;
+    width: 1320px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 187px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-text{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #444444;
+}
+
+.table{
+    display: flex;
+    margin-top: 134px;
+    flex-direction: column;
+}
+
+.table-numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    
+    margin-left: 23px;
+    width: 813px;
+    border-collapse: collapse;
+}
+.table-info{
+    display: flex;
+}
+
+td {
+    border-bottom: 1px solid #E1E3E9;
+    border-top: 1px solid #E1E3E9;
+    height: 66px;
+}
+
+td:nth-child(2) {
+    text-align: right;
+}
+
+.table-fone {
+    z-index: -2;
+    position: absolute;
+    width: 446px;   
+    height: 300px;
+    right: 170px;
+    top: 170px;
+}
+
+.table-img {
+    padding-left: 74px;
+}
+
+.business{
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+}
+
+.business-text {
+    font-family: Blogger Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #132576;
+    margin-left: 21px;
+}
+
+.background-final {
+    position: absolute;
+    top: 3562px;
+    z-index: -10;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    object-fit: cover;
+}
+
+.final {
+    text-align: center;
+    margin-top: 224px;
+}
 
 
