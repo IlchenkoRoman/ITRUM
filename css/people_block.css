@@ -1,0 +1,232 @@
+.background-people{
+    position: absolute;
+    top: 2080px;
+    z-index: -6;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.block-people {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 1320px;
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 141px;
+    padding-top: 60px;
+}
+
+.people-black-cube{
+    position: absolute;
+    left: 0; 
+    top: 0;
+    z-index: -1;
+}
+
+.people-boy {
+    position: absolute;
+    left: 487px; 
+    top: 64px;
+    z-index: -1;
+}
+
+.people-woman{
+    position: absolute;
+    left: 190px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.people-description {
+    margin-left: 70px;
+    width: 50%;
+}
+
+.people-description-text>.text-p1 {
+    width: 427px;
+}
+
+.people-card{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.people-card-img {
+    width: 286px;
+    height: 283px;
+    border-top: 1px solid #161c3500;
+    background-image: url("../img/Layer 13 1.png");
+    background-size: no-repeat;
+    background-position: center;
+}
+
+.level-circle {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/Circle Progress Bar.svg");
+    background-size: no-repeat;
+    background-position: center;
+    width: 60px;
+    height: 60px;
+    margin-left: 22px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.level-num{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 3px;
+}
+
+.level-text {
+    font-family: Blogger Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.people-card-description {
+    width: 286px;
+    height: 170px;
+    background-color: #FFFFFF;
+    display: flex;
+    position: relative;
+    border-radius: 0 0 20px 20px;
+    padding-top: 31px;
+    flex-direction: column;
+}
+
+.people-flags-block{
+    display: flex;
+    justify-content: space-around;
+    width: 144px;
+    height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: -12px;
+}
+
+.people-flags {
+    width: 35px;
+    height: 24px;
+}
+
+.people-data {
+    display: flex;
+    height: 22px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 23px;
+}
+
+.people-name{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #1D2E5B;
+    margin-left: 14px;
+}
+
+.tags {
+    max-width: 240px;
+    font-family: Blogger Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #444444;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+}
+
+.icons{
+    display: flex;
+    width: 125px;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second-people-card>.people-card-img {
+    background-image: url("../img/demin-desktop\ 1.png");
+}
+
+.second-people-card>.people-card-img>.level-circle {
+    background-image: url("../img/Circle Progress Bar2.svg");
+}
+
+@media (max-width: 1139px) {
+    .background-people{
+        top: 2900px;
+        z-index: -6;
+        height: 1371px;
+    }
+
+    .block-people {
+        flex-direction: column;
+        margin-top: 0px;
+        height: 1045px;
+    }
+
+    .people-description-buttons{
+        display: none;
+    }
+
+    .people-card {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .people-description-text>.text-p2 {
+        margin-bottom: 3em;
+    }
+
+    .people-black-cube{
+        left: 5%; 
+        top: 0;
+    }
+
+
+    .people-boy {
+        position: absolute;
+        left: 5%; 
+        top: 31%;
+        z-index: -1;
+    }
+
+    .people-woman{
+        position: absolute;
+        top: 0;
+        right: 10%;
+        left: auto;
+        bottom: auto;
+        z-index: -1;
+    }
+
+}

@@ -1,0 +1,153 @@
+.second-background {
+    position: absolute;
+    top: 602px;
+    z-index: -4;
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.block-about{
+    position: relative;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    max-width: 1320px;
+    height: 660px;
+}
+
+.black-cube {
+    content: url(../img/back.svg);
+    position: absolute;
+    top: -20px;
+    z-index: -3;
+    left: 0; 
+}
+
+.img-back {
+    content: url(../img/img_back.svg);
+    position: absolute;
+    z-index: -2;
+    right: 0; 
+    bottom: 0;
+}
+
+.text-about{
+    padding-top: 40px;
+    margin-left: 70px;
+}
+
+.text-h2{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF8D30;
+    margin-bottom: 1em;
+}
+
+.text-about>.text-p1{
+    width: 619px;
+}
+
+.text-p1 {
+    font-family: Blogger Sans, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FFFFFF;
+}
+
+.text-about>.text-p2{
+    width: 425px;
+}
+
+.text-p2 {
+    font-family: Blogger Sans, sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 2.1em;
+}
+
+.yellow-button {
+    width: 274px;
+    height: 80px;
+    background: #FFD74B;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 4.5em;
+    border: none;
+}
+
+.button-about{
+    margin-left: 70px;
+}
+
+.button-text{
+    font-family: Blogger Sans, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1D2E5B;
+
+}
+
+@media (max-width: 1139px) {
+
+    .second-background {
+        top: 1050px;
+        height: 925px;
+        border-radius: 0 0 50px 50px;
+    }
+
+    .black-cube{
+        width: 100%;
+        content: url(../img/Rectangle\ 34.svg);
+    }
+
+    .text-about {
+        margin-top: 14em;
+    }
+
+    .text-about>.text-p1{
+        width: 308px;
+    }
+
+
+    .text-about>.text-p2{
+        width: 265px;
+    }
+
+    .img-back {
+        content: url(../img/img_tablet.svg);
+        right: -70px;
+        top: 2em;
+        bottom: auto;
+
+    }
+}
+
+@media (max-width: 799px) {
+    .img-back {
+        top:0;
+        margin-left: auto;
+        margin-left: auto;
+        opacity: .1;
+    }  
+}
