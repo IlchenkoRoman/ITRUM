@@ -503,7 +503,6 @@
         margin-right: auto;
         margin-top: 5em;
         display: flex;
-        /* align-items: center; */
     }
 
     .white-cube{
@@ -903,6 +902,7 @@
     .background-profile {
         position: absolute;
         top: 2843px;
+        height:838px;
         z-index: -10;
         left: 0; 
         right: 0; 
@@ -913,7 +913,8 @@
 
     .profile-block{
         position: relative;
-        width: 1320px;
+        width: 100%;
+        max-width: 1320px;
         height: 550px;
         margin-left: auto;
         margin-right: auto;
@@ -937,6 +938,9 @@
         display: flex;
         margin-top: 134px;
         flex-direction: column;
+        width: 100%;
+        max-width: 1177px;
+        align-items: center;
     }
 
     .table-numbers {
@@ -945,13 +949,14 @@
     }
 
     table {
-        
         margin-left: 23px;
-        width: 813px;
+        width: 100%;
+        max-width: 813px;
         border-collapse: collapse;
     }
     .table-info{
         display: flex;
+        width: 100%;
     }
 
     td {
@@ -969,15 +974,17 @@
         position: absolute;
         width: 446px;   
         height: 300px;
-        right: 170px;
-        top: 170px;
+        right: 100px;
+        top: -50px;
     }
 
     .table-img {
         padding-left: 74px;
+        position: relative;
     }
 
     .business{
+        align-self: start;
         margin-top: 33px;
         display: flex;
         align-items: center;
@@ -994,10 +1001,57 @@
         margin-left: 21px;
     }
 
+    @media (max-width: 1139px) {
+        .background-profile {
+            top: 4200px;
+            height: 700px;
+        }
+
+        .profile-block{
+            margin-top: 8em;
+        }
+
+        .table{
+            margin-top: 5em;
+        }
+
+
+
+    }
+
+    @media (max-width: 900px) {
+
+
+        .table-fone {
+            width: 198px;   
+            height: 285px;
+            right: -40px;
+            top: -40px;
+        }
+
+        .rates{
+            position: absolute;
+            width: 100px;
+            z-index: 1;
+            bottom: -90px;
+            right: 0;
+        }
+
+        .table-img {
+            padding-left: 0px;
+        }
+
+        .table{
+            width: 80%;
+ 
+         }
+    }
+
+
     .background-final {
         position: absolute;
         top: 3562px;
-        z-index: -10;
+        z-index: -11;
         left: 0; 
         right: 0; 
         margin: auto;
@@ -1007,6 +1061,20 @@
     .final {
         text-align: center;
         margin-top: 224px;
+    }
+
+
+    @media (max-width: 1139px) {
+
+        .background-final {
+            top: 4800px;
+        }
+
+        .final {
+            text-align: center;
+            margin-top: 2em;
+        }
+
     }
 
 
