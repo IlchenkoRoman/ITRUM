@@ -7,11 +7,14 @@
     margin: auto;
     object-fit: cover;
     border-radius: 50px;
+    height: 808px;
+    width: 100%;
+    content: url(../img/background_about.svg);
 }
 
 .block-about{
     position: relative;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
     width: 100%;
     max-width: 1320px;
     height: 660px;
@@ -23,6 +26,8 @@
     top: -20px;
     z-index: -3;
     left: 0; 
+    height: 212px;
+    width: 212px;
 }
 
 .img-back {
@@ -31,6 +36,8 @@
     z-index: -2;
     right: 0; 
     bottom: 0;
+    height: 665px;
+    width: 630px;
 }
 
 .text-about{
@@ -38,12 +45,18 @@
     margin-left: 70px;
 }
 
-.text-h2{
+.text-h2,
+.text-p1,
+.text-p2,
+.button-text{
     font-family: Blogger Sans, sans-serif;
+    letter-spacing: 0em;
+}
+
+.text-h2{
     font-size: 45px;
     font-weight: 700;
     line-height: 45px;
-    letter-spacing: 0em;
     text-align: left;
     color: #FF8D30;
     margin-bottom: 1em;
@@ -54,11 +67,9 @@
 }
 
 .text-p1 {
-    font-family: Blogger Sans, sans-serif;
     font-size: 28px;
     font-weight: 300;
     line-height: 34px;
-    letter-spacing: 0em;
     text-align: left;
     color:#FFFFFF;
 }
@@ -68,11 +79,9 @@
 }
 
 .text-p2 {
-    font-family: Blogger Sans, sans-serif;
     font-size: 21px;
     font-weight: 700;
     line-height: 24px;
-    letter-spacing: 0em;
     text-align: left;
     color: #FFFFFF;
     margin-top: 2.1em;
@@ -83,7 +92,6 @@
     height: 80px;
     background: #FFD74B;
     border-radius: 20px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -98,11 +106,9 @@
 }
 
 .button-text{
-    font-family: Blogger Sans, sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
-    letter-spacing: 0em;
     text-align: left;
     color: #1D2E5B;
 
@@ -146,7 +152,6 @@
 @media (max-width: 799px) {
     .img-back {
         top:0;
-        margin-left: auto;
         margin-left: auto;
         opacity: .1;
     }  

@@ -7,44 +7,58 @@
     margin: auto;
     object-fit: cover;
     border-radius: 50px;
+    width: 100%;
+    height: 852px;
+    content: url(../img/background_about.svg);
 }
 
 .block-people {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     position: relative;
     width: 100%;
     max-width: 1320px;
     height: 550px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 141px;
+    margin: 141px auto 0;
     padding-top: 60px;
 }
 
-.people-black-cube{
+.people-black-cube,
+.people-boy,
+.people-woman {
     position: absolute;
+    z-index: -1;
+}
+
+.people-black-cube{
+    width: 212px;
+    height: 212px;
+    content: url(../img/back.svg);
     left: 0; 
     top: 0;
-    z-index: -1;
 }
 
 .people-boy {
-    position: absolute;
     left: 487px; 
     top: 64px;
-    z-index: -1;
+    width: 143px;
+    height: 143px;
+    content: url(../img/smolov-back-desktop.svg);
 }
 
 .people-woman{
-    position: absolute;
     left: 190px;
     bottom: 0;
-    z-index: -1;
+    width: 285px;
+    height: 285px;
+    content: url(../img/rogovaya-back-desktop.svg);
 }
 
 .people-description {
     margin-left: 70px;
     width: 50%;
+    grid-column: 1; 
+    grid-row: 1;
 }
 
 .people-description-text>.text-p1 {
@@ -52,7 +66,9 @@
 }
 
 .people-card{
-    width: 50%;
+    grid-column: 2; 
+    grid-row: 1;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -62,7 +78,7 @@
     height: 283px;
     border-top: 1px solid #161c3500;
     background-image: url("../img/Layer 13 1.png");
-    background-size: no-repeat;
+    background-size: cover;
     background-position: center;
 }
 
@@ -70,36 +86,38 @@
     display: flex;
     flex-direction: column;
     background-image: url("../img/Circle Progress Bar.svg");
-    background-size: no-repeat;
+    background-size: cover;
     background-position: center;
     width: 60px;
     height: 60px;
-    margin-left: 22px;
-    margin-top: 20px;
+    margin: 20px 0 0 22px;
     align-items: center;
     justify-content: center;
 }
 
-.level-num{
+.level-num,
+.level-text {
     font-family: Blogger Sans, sans-serif;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.level-num{
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFFFF;
     border-bottom: 1px solid #FFFFFF;
     margin-bottom: 3px;
 }
 
 .level-text {
-    font-family: Blogger Sans, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
-    color: #FFFFFF;
 }
 
 .people-card-description {
@@ -181,6 +199,18 @@
     background-image: url("../img/Circle Progress Bar2.svg");
 }
 
+.people-description-buttons{
+    grid-column: 1; 
+    grid-row: 1;
+    align-self: end;
+    margin: auto auto 5em 5em;
+}
+
+.offline{
+    width: 8px;
+    height: 8px;
+}
+
 @media (max-width: 1139px) {
     .background-people{
         top: 2900px;
@@ -189,18 +219,29 @@
     }
 
     .block-people {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         margin-top: 0px;
         height: 1045px;
     }
 
     .people-description-buttons{
-        display: none;
+        grid-column: 1;
+        grid-row: 3;
+        width: 80%;
+        align-self: end;
+        margin: 1em auto;
     }
 
     .people-card {
         width: 100%;
         justify-content: space-evenly;
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .people-description {
+        grid-column: 1;
+        grid-row: 1;
     }
 
     .people-description-text>.text-p2 {
@@ -228,5 +269,4 @@
         bottom: auto;
         z-index: -1;
     }
-
 }
