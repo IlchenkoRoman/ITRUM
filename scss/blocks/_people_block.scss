@@ -1,0 +1,268 @@
+.background-people {
+    position: absolute;
+    top: 2080px;
+    z-index: -6;
+    left: 0;
+    right: 0;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50px;
+    width: 100%;
+    height: 852px;
+    content: url(../img/background_about.svg);
+
+    @media (max-width: 1139px) {
+        top: 2900px;
+        z-index: -6;
+        height: 1371px;
+    }
+}
+
+.block-people {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    width: 100%;
+    max-width: 1320px;
+    height: 550px;
+    margin: 141px auto 0;
+    padding-top: 60px;
+
+    @media (max-width: 1139px) {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+        height: 1045px;
+    }
+}
+
+.people-black-cube,
+.people-boy,
+.people-woman {
+    position: absolute;
+    z-index: -1;
+
+    &.people-black-cube {
+        width: 212px;
+        height: 212px;
+        content: url(../img/back.svg);
+        left: 0;
+        top: 0;
+
+        @media (max-width: 1139px) {
+            left: 5%;
+            top: 0;
+        }
+    }
+
+    &.people-boy {
+        left: 487px;
+        top: 64px;
+        width: 143px;
+        height: 143px;
+        content: url(../img/smolov-back-desktop.svg);
+
+        @media (max-width: 1139px) {
+            left: 5%;
+            top: 31%;
+        }
+    }
+
+    &.people-woman {
+        left: 190px;
+        bottom: 0;
+        width: 285px;
+        height: 285px;
+        content: url(../img/rogovaya-back-desktop.svg);
+
+        @media (max-width: 1139px) {
+            top: 0;
+            right: 10%;
+            left: auto;
+            bottom: auto;
+        }
+    }
+}
+
+.people-description {
+    margin-left: 70px;
+    width: 50%;
+    grid-column: 1;
+    grid-row: 1;
+
+    .people-description-text {
+        .text-p1 {
+            width: 427px;
+        }
+
+        @media (max-width: 1139px) {
+            .text-p2 {
+                margin-bottom: 3em;
+            }
+        }
+    }
+
+    .people-description-buttons {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: end;
+        margin: auto auto 5em 5em;
+
+        @media (max-width: 1139px) {
+            grid-column: 1;
+            grid-row: 3;
+            width: 80%;
+            margin: 1em auto;
+        }
+    }
+}
+
+.people-card {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .first-people-card{
+
+        .people-card-img {
+            width: 286px;
+            height: 283px;
+            border-top: 1px solid #161c3500;
+            background-size: cover;
+            background-position: center;
+            background-image: url("../img/Layer 13 1.png");
+    
+                .level-circle {
+                    background-image: url("../img/Circle Progress Bar2.svg");
+                }
+            }
+        }
+
+
+
+    .second-people-card{
+
+        .people-card-img {
+            width: 286px;
+            height: 283px;
+            border-top: 1px solid #161c3500;
+            background-size: cover;
+            background-position: center;
+            background-image: url("../img/demin-desktop-1.png");
+
+                .level-circle {
+                    background-image: url("../img/Circle Progress Bar2.svg");
+                }
+            }
+    }
+
+    .level-circle {
+        display: flex;
+        flex-direction: column;
+        background-image: url("../img/Circle Progress Bar.svg");
+        background-size: cover;
+        background-position: center;
+        width: 60px;
+        height: 60px;
+        margin: 20px 0 0 22px;
+        align-items: center;
+        justify-content: center;
+
+        .level-num,
+        .level-text {
+            font-family: 'Blogger Sans', sans-serif;
+            color: #FFFFFF;
+            text-align: left;
+        }
+
+        .level-num {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 24px;
+            border-bottom: 1px solid #FFFFFF;
+            margin-bottom: 3px;
+        }
+
+        .level-text {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 14px;
+        }
+    }
+
+    .people-card-description {
+        width: 286px;
+        height: 170px;
+        background-color: #FFFFFF;
+        display: flex;
+        position: relative;
+        border-radius: 0 0 20px 20px;
+        padding-top: 31px;
+        flex-direction: column;
+
+        .people-flags-block {  
+            display: flex;
+            justify-content: space-around;
+            width: 144px;
+            height: 24px;
+            position: absolute;
+            top: -12px;
+            left: 25%;
+            margin: 0 auto; 
+
+            .people-flags {
+                width: 35px;
+                height: 24px;
+            }
+        }
+
+        .people-data {
+            display: flex;
+            height: 22px;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 23px;
+
+            .people-name {
+                font-family: 'Blogger Sans', sans-serif;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 22px;
+                color: #1D2E5B;
+                margin-left: 14px;
+            }
+        }
+
+        .tags {
+            max-width: 240px;
+            font-family: 'Blogger Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 23px;
+            color: #444444;
+            margin: 0 auto 24px;
+            text-align: center;
+        }
+
+        .icons {
+            display: flex;
+            width: 125px;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+    }
+
+    @media (max-width: 1139px) {
+        width: 100%;
+        justify-content: space-evenly;
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
+.offline {
+    width: 8px;
+    height: 8px;
+}

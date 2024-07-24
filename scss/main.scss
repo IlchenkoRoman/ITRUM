@@ -1,0 +1,327 @@
+@import "./blocks/about_block";
+@import "./blocks/country";
+@import "./blocks/first_block";
+@import "./blocks/people_block";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.table-numbers:nth-child(even) {
+    width: 68px;
+    height: 68px;
+}
+
+header {
+    margin: 46px auto 0 auto;
+    max-width: 1320px;
+    width: 90%;
+    height: 53px;
+    display: flex;
+    align-items: center;
+
+    > div {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    @media (max-width: 1005px) {
+        width: 95%;
+
+        nav > li {
+            display: none;
+        }
+
+        .contact {
+            display: none;
+        }
+
+        .line {
+            display: none;
+        }
+
+        .menu {
+            display: flex;
+            width: 100%;
+            height: 50px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .double-line {
+                width: 30px;
+                height: 3px;
+                background: #FFFFFF;
+                border-radius: 2px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 700px) {
+        width: 80%;
+
+        .contact-buttons {
+            display: none;
+        }
+
+        .menu {
+            align-items: flex-end;
+        }
+
+        .logo {
+            content: url(../img/lobo_mobile.svg);
+            height: 25px;
+            width: 106px;
+        }
+
+        .black-desktop {
+            height: 596px;
+        }
+
+        .traveller {
+            width: 192px;
+            height: 255px;
+        }
+    }
+}
+
+.logo {
+    content: url(../img/logo_full.svg);
+    width: 200px;
+    height: 50px;
+}
+
+.autorithation {
+    background-color: #FFD74B;
+    width: 188px;
+    height: 50px;
+    border-radius: 25px;
+    border: 0;
+    font-family: Blogger Sans, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+    color: #161C35;
+}
+
+.contact-buttons {
+    margin-left: auto;
+}
+
+.contact {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+nav {
+    width: 100%;
+    list-style-type: none;
+    margin-left: 1em;
+
+    > li {
+        display: inline-block;
+        font-family: Blogger Sans, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #FFFFFF;
+        margin-right: 1%;
+    }
+}
+
+.menu {
+    display: none;
+}
+
+.line {
+    width: 3%;
+    max-width: 60px;
+    height: 3px;
+    background: #FFFFFF;
+    border-radius: 2px;
+    margin-left: 1em;
+}
+
+.rates {
+    content: url(../img/rates.svg);
+}
+
+.background-profile {
+    position: absolute;
+    top: 2843px;
+    height: 838px;
+    z-index: -10;
+    left: 0;
+    right: 0;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 50px;
+    width: 100%;
+    content: url(../img/background_coutry.svg);
+
+    @media (max-width: 1139px) {
+        top: 4200px;
+        height: 700px;
+    }
+}
+
+.profile-block {
+    position: relative;
+    width: 100%;
+    max-width: 1320px;
+    height: 550px;
+    margin: 187px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 1139px) {
+        margin-top: 8em;
+    }
+}
+
+.table-text {
+    font-family: Blogger Sans, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: left;
+    color: #444444;
+}
+
+.table {
+    display: flex;
+    margin-top: 134px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1177px;
+    align-items: center;
+
+    @media (max-width: 1139px) {
+        margin-top: 5em;
+    }
+
+    @media (max-width: 900px) {
+        width: 80%;
+    }
+}
+
+.table-numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+table {
+    margin-left: 23px;
+    width: 100%;
+    max-width: 813px;
+    border-collapse: collapse;
+}
+
+.table-info {
+    display: flex;
+    width: 100%;
+}
+
+td {
+    border-bottom: 1px solid #E1E3E9;
+    border-top: 1px solid #E1E3E9;
+    height: 66px;
+
+    &:nth-child(2) {
+        text-align: right;
+    }
+}
+
+.table-fone {
+    z-index: -2;
+    position: absolute;
+    width: 446px;
+    height: 300px;
+    right: 100px;
+    top: -50px;
+    content: url(../img/back.png);
+
+    @media (max-width: 900px) {
+        width: 198px;
+        height: 285px;
+        right: -40px;
+        top: -40px;
+    }
+}
+
+.table-img {
+    padding-left: 74px;
+    position: relative;
+
+    @media (max-width: 900px) {
+        padding-left: 0;
+    }
+}
+
+.business {
+    align-self: start;
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+
+    .business-text {
+        font-family: Blogger Sans, sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: left;
+        color: #132576;
+        margin-left: 21px;
+    }
+}
+
+.rates {
+    @media (max-width: 900px) {
+        position: absolute;
+        width: 100px;
+        z-index: 1;
+        bottom: -90px;
+        right: 0;
+    }
+}
+
+.background-final {
+    position: absolute;
+    top: 3562px;
+    z-index: -11;
+    left: 0;
+    right: 0;
+    margin: auto;
+    object-fit: cover;
+    width: 100%;
+    height: 310px;
+    content: url(../img/background_about.svg);
+
+    @media (max-width: 1139px) {
+        top: 4800px;
+    }
+}
+
+.final {
+    margin: 224px auto auto;
+    text-align: center !important;
+
+    @media (max-width: 1139px) {
+        margin-top: 2em;
+    }
+}

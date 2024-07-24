@@ -10,9 +10,15 @@
     height: 808px;
     width: 100%;
     content: url(../img/background_about.svg);
+
+    @media (max-width: 1139px) {
+        top: 1050px;
+        height: 925px;
+        border-radius: 0 0 50px 50px;
+    }
 }
 
-.block-about{
+.block-about {
     position: relative;
     margin: 0 auto;
     width: 100%;
@@ -28,6 +34,11 @@
     left: 0; 
     height: 212px;
     width: 212px;
+
+    @media (max-width: 1139px) {
+        width: 100%;
+        content: url(../img/Rectangle\ 34.svg);
+    }
 }
 
 .img-back {
@@ -38,22 +49,47 @@
     bottom: 0;
     height: 665px;
     width: 630px;
+
+    @media (max-width: 1139px) {
+        content: url(../img/img_tablet.svg);
+        right: -70px;
+        top: 2em;
+        bottom: auto;
+    }
+
+    @media (max-width: 799px) {
+        top: 0;
+        margin-left: auto;
+        opacity: .1;
+    }  
 }
 
-.text-about{
+.text-about {
     padding-top: 40px;
     margin-left: 70px;
+
+    @media (max-width: 1139px) {
+        margin-top: 14em;
+
+        > .text-p1 {
+            width: 308px;
+        }
+
+        > .text-p2 {
+            width: 265px;
+        }
+    }
 }
 
 .text-h2,
 .text-p1,
 .text-p2,
-.button-text{
-    font-family: Blogger Sans, sans-serif;
+.button-text {
+    font-family: 'Blogger Sans', sans-serif;
     letter-spacing: 0em;
 }
 
-.text-h2{
+.text-h2 {
     font-size: 45px;
     font-weight: 700;
     line-height: 45px;
@@ -62,7 +98,7 @@
     margin-bottom: 1em;
 }
 
-.text-about>.text-p1{
+.text-about > .text-p1 {
     width: 619px;
 }
 
@@ -71,10 +107,10 @@
     font-weight: 300;
     line-height: 34px;
     text-align: left;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
-.text-about>.text-p2{
+.text-about > .text-p2 {
     width: 425px;
 }
 
@@ -101,58 +137,14 @@
     border: none;
 }
 
-.button-about{
+.button-about {
     margin-left: 70px;
 }
 
-.button-text{
+.button-text {
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
     text-align: left;
     color: #1D2E5B;
-
-}
-
-@media (max-width: 1139px) {
-
-    .second-background {
-        top: 1050px;
-        height: 925px;
-        border-radius: 0 0 50px 50px;
-    }
-
-    .black-cube{
-        width: 100%;
-        content: url(../img/Rectangle\ 34.svg);
-    }
-
-    .text-about {
-        margin-top: 14em;
-    }
-
-    .text-about>.text-p1{
-        width: 308px;
-    }
-
-
-    .text-about>.text-p2{
-        width: 265px;
-    }
-
-    .img-back {
-        content: url(../img/img_tablet.svg);
-        right: -70px;
-        top: 2em;
-        bottom: auto;
-
-    }
-}
-
-@media (max-width: 799px) {
-    .img-back {
-        top:0;
-        margin-left: auto;
-        opacity: .1;
-    }  
 }

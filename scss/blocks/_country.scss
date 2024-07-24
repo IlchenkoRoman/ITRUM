@@ -2,17 +2,22 @@
     position: absolute;
     top: 1322px;
     z-index: -5;
-    left: 0; 
-    right: 0; 
+    left: 0;
+    right: 0;
     margin: auto;
     object-fit: cover;
     border-radius: 50px;
     height: 838px;
     width: 100%;
     content: url(../img/background_coutry.svg);
+
+    @media (max-width: 1139px) {
+        height: 1169px;
+        top: 1900px;
+    }
 }
 
-.block-country{
+.block-country {
     position: relative;
     width: 100%;
     max-width: 1320px;
@@ -21,9 +26,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+
+    @media (max-width: 1139px) {
+        grid-template-columns: 1fr;
+        height: 1069px;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        margin-top: 7em;
+    }
 }
 
-.white-cube{
+.white-cube {
     position: absolute;
     z-index: -2;
     top: 0;
@@ -31,6 +44,10 @@
     width: 140px;
     height: 140px;
     content: url(../img/Rectangle\ 14.svg);
+
+    @media (max-width: 1139px) {
+        display: none;
+    }
 }
 
 .flags {
@@ -41,23 +58,43 @@
     height: 575px;
     width: 287px;
     content: url(../img/flags-back\ 1.svg);
+
+    @media (max-width: 1139px) {
+        right: 70px;
+    }
 }
 
 .country-card {
     grid-column: 1;
     grid-row: 1 / span 2;
     display: flex;
-    width:559px;
-    height:140px;
+    width: 559px;
+    height: 140px;
     background-color: #FFFFFF;
     border-radius: 20px;
     align-items: flex-start;
     margin: 1em 0 0 70px;
-}
 
-.country-card-info{
-    margin-left: 30px;
-    align-self: center;
+    @media (max-width: 1139px) {
+        margin-left: 0px;
+    }
+
+    &-info {
+        margin-left: 30px;
+        align-self: center;
+    }
+
+    &-img {
+        position: absolute;
+        z-index: 1;
+        width: 559px;
+        height: 140px;
+    }
+
+    &-user-info {
+        display: flex;
+        margin-top: 1.5em;
+    }
 }
 
 .country-card-h2,
@@ -67,14 +104,14 @@
     letter-spacing: 0em;
 }
 
-.country-card-h2{
+.country-card-h2 {
     font-size: 24px;
     font-weight: 700;
     line-height: 24px;
     text-align: left;
 }
 
-.country-card-p{
+.country-card-p {
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
@@ -83,25 +120,13 @@
     opacity: 0.3;
 }
 
-.country-card-user-info{
-    display: flex;
-    margin-top: 1.5em;
-}
-
-.country-card-users{
+.country-card-users {
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
     text-align: left;
     opacity: 0.3;
     color: #444444;
-}
-
-.country-card-img{
-    position: absolute;
-    z-index: 1;
-    width: 559px;
-    height: 140px;
 }
 
 .flag {
@@ -111,10 +136,17 @@
     height: 47px;
 }
 
-.country-description{
+.country-description {
     grid-column: 2;
-    margin: 0 11% 0 auto; 
-    grid-row: 1;  
+    margin: 0 11% 0 auto;
+    grid-row: 1;
+
+    @media (max-width: 1139px) {
+        margin: 0 70px 0;
+        grid-template-columns: 1fr;
+        grid-column: 1;
+        grid-row: 1;
+    }
 }
 
 .country-description-buttons {
@@ -123,7 +155,17 @@
     grid-row: 1;
     margin: 0 20% 15em auto;
     align-self: end;
+
+    @media (max-width: 1139px) {
+        display: flex;
+        grid-column: 1;
+        width: 80%;
+        margin: 1em auto;
+        grid-row: 3;
+        align-self: start;
+    }
 }
+
 .second-white-cube {
     position: absolute;
     left: 50px;
@@ -133,9 +175,13 @@
     width: 140px;
     height: 140px;
     content: url(../img/Rectangle\ 14.svg);
+
+    @media (max-width: 1139px) {
+        display: block;
+    }
 }
 
-.icon-user{
+.icon-user {
     content: url(../img/icon_user.svg);
 }
 
@@ -144,34 +190,6 @@
 }
 
 @media (max-width: 1139px) {
-    .background-coutry {
-        height: 1169px;
-        top: 1900px;
-        
-    }
-
-    .block-country{
-        grid-template-columns: 1fr;
-        height: 1069px;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        margin-top: 7em;
-    }
-
-    .country-description {
-        margin: 0 70px 0;
-        grid-template-columns: 1fr;
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .flags {
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        right: 70px;
-    }
-
     .country-cards {
         width: 100%;
         display: flex;
@@ -181,26 +199,4 @@
         grid-row: 2;
         margin-bottom: 0;
     }
-
-    .country-card {
-        margin-left: 0px;
-    }
-
-    .country-description-buttons{
-        display: flex;
-        grid-column: 1;
-        width: 80%;
-        margin: 1em auto;
-        grid-row: 3;
-        align-self: start;
-    }
-
-    .second-white-cube{
-        display: block;
-    }
-
-    .white-cube {
-        display: none;
-    }
-
 }
